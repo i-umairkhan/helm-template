@@ -1,0 +1,13 @@
+appName: myhelmapp
+port: 80
+
+namespace: default
+
+configmap:
+  name: myhelmapp-configmap-v1
+  data:
+    CUSTOM_HEADER: 'This app was deployed with helm by umair!'
+
+image:
+  name: devopsjourney1/mywebapp
+  tag: latest
